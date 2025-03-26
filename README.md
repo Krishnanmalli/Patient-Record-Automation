@@ -10,9 +10,9 @@ account creation, vital record entry and record retrieval.
 Selenium Webdriver, TestNG (for test execution) 
 
 # Description 
-• Maintained and developed Selenium Webdriver scripts for functional testing.                
-• Run test cases to ensure basic functionalities such as patient account creation, 
-  vital record entry and record retrieval. 
-• Automated test execution using TestNG for structured testing and reporting. 
-• Conducted cross-browser testing to achieve uniform application behavior. 
-• Reviewed test scripts to improve efficiency and maintainability. 
+* Maintained and developed Selenium Webdriver scripts for functional testing.
+* Run test cases to ensure basic functionalities such as patient account creation, 
+  vital record entry and record retrieval.
+* Automated test execution using TestNG for structured testing and reporting.
+* Conducted cross-browser testing to achieve uniform application behavior.
+* Reviewed test scripts to improve efficiency and maintainability. 
