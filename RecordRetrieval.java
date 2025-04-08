@@ -12,8 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class RecordRetrieval {
 
 	public static void main(String[] args) {
-        WebDriver driver;
-		
+                WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
@@ -30,10 +29,10 @@ public class RecordRetrieval {
 		driver.findElement(By.id("patient-search")).sendKeys("Paul Walker");
 		driver.findElement(By.className("odd")).click();
 		driver.navigate().back();
-        driver.findElement(By.id("patient-search")).sendKeys("Mary Miller");
-        driver.findElement(By.className("odd")).click();
-        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a")).click();
-        driver.findElement(By.className("nav-item logout")).click();
+                driver.findElement(By.id("patient-search")).sendKeys("Mary Miller");
+                driver.findElement(By.className("odd")).click();
+                driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a")).click();
+                driver.findElement(By.className("nav-item logout")).click();
 	}
 }
 
