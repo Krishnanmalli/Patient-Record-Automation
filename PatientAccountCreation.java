@@ -27,7 +27,6 @@ public class PatientAccountCreation {
 		driver.findElement(By.id("next-button")).click();
 		Select genderfield = new Select(driver.findElement(By.id("gender-field")));
 		genderfield.selectByValue("M");
-		driver.findElement(By.xpath("//*[@id=\"gender-field\"]/option[1]")).click(); 
 		driver.findElement(By.id("next-button")).click();
 		driver.findElement(By.id("birthdateDay-field")).sendKeys("5");
 		Select birthdaymonth = new Select(driver.findElement(By.id("birthdateMonth-field")));
