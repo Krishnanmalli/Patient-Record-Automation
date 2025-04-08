@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
  
 public class VitalRecordEntry {
@@ -14,10 +13,7 @@ public class VitalRecordEntry {
 		WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
-		options.setHeadless(false);
 		driver = new ChromeDriver(options);
-		
 		driver.manage().window().maximize();	
 		driver.get("https://demo.openmrs.org/openmrs/login.htm");
 		driver.findElement(By.id("username")).sendKeys("admin");
@@ -35,7 +31,7 @@ public class VitalRecordEntry {
 		driver.findElement(By.id("next-button")).click();
 		driver.findElement(By.id("w12")).sendKeys("40");
 		driver.findElement(By.id("next-button")).click();
-        driver.findElement(By.id("w14")).sendKeys("85");
+                driver.findElement(By.id("w14")).sendKeys("85");
 		driver.findElement(By.id("next-button")).click();
 		driver.findElement(By.id("w16")).sendKeys("15");
 		driver.findElement(By.id("next-button")).click();
