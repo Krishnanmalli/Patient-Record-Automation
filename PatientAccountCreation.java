@@ -10,8 +10,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PatientAccountCreation {
 	public static void main(String[] args){
-		WebDriver driver;
 		
+		WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		driver = new ChromeDriver(options);
