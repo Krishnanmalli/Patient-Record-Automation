@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -15,10 +14,7 @@ public class RecordRetrieval {
                 WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
-		options.setHeadless(false);
 		driver = new ChromeDriver(options);
-		
 		driver.manage().window().maximize();	
 		driver.get("https://demo.openmrs.org/openmrs/login.htm");
 		driver.findElement(By.id("username")).sendKeys("admin");
