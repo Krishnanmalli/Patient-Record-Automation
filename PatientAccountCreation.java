@@ -46,6 +46,7 @@ public class PatientAccountCreation {
 		driver.findElement(By.className("person-typeahead")).sendKeys("Miller");
 		driver.findElement(By.id("next-button")).click();
 		driver.findElement(By.id("submit")).click();
-		driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a/i")).click();
+		driver.quit();
 	}
 }
