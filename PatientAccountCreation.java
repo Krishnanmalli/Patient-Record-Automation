@@ -12,8 +12,7 @@ public class PatientAccountCreation {
 		
 		WebDriver driver;
 		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();	
 		driver.get("https://demo.openmrs.org/openmrs/login.htm");
 		driver.findElement(By.id("username")).sendKeys("admin");
