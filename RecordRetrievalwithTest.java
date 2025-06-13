@@ -36,11 +36,10 @@ public class RecordRetrievalwithTest {
 	}
 
 	@AfterMethod
-	public void logout() throws InterruptedException{
+	public void logout() throws InterruptedException {
 		Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a/i")).click();
+                driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a/i")).click();
 		driver.quit();
 	}
-
 }
 
